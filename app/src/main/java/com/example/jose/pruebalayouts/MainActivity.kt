@@ -6,10 +6,15 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import org.jetbrains.anko.*
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var boton=findViewById<Button>(R.id.button)
@@ -22,9 +27,13 @@ class MainActivity : AppCompatActivity() {
             if(horizontal!=null) // si el boton existe marcamos la variable a true y mostramos el toast
                 is_horizontal=true
             if(is_horizontal)
-                Toast.makeText(this,"HORIZONTAL",Toast.LENGTH_LONG).show()
+                toast("horizontal")
             else
             startActivity(intent)
+
         }
+
+
+
     }
 }
