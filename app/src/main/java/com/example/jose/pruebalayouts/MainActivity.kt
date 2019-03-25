@@ -12,7 +12,9 @@ import org.jetbrains.anko.*
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        /**
+         * clase con la que trabajaremos con los fragments
+         */
 
 
         super.onCreate(savedInstanceState)

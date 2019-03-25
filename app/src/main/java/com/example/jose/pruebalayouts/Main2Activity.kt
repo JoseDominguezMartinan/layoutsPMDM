@@ -7,12 +7,14 @@ import android.util.Log
 import kotlinx.android.synthetic.main.activity_main2.*
 import org.jetbrains.anko.*
 import java.net.URL
-import kotlinx.serialization.json.Json
 import android.view.View.INVISIBLE
 import org.json.JSONArray
 import android.view.View.VISIBLE
 
 class Main2Activity : Activity() {
+    /**
+     * segundo activity donde tendremos un boton que hace una solicitud a wordpress
+     */
 
     // para la etiqueta de los logs
     val LOGTAG = "peticionwp"
